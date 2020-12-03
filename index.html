@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light m-4">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<div class="ml-auto mymobile">
+	    <ul class="navbar-nav ">
+	      <li class="nav-item active mx-5">
+	        <a class="nav-link login mynav text-center" href="#">Logare</a>
+	      </li>
+	      <li class="nav-item  mx-5">
+	        <a class="nav-link eleme mynav text-center" href="#">Creare cont</a>
+	      </li>
+	      <li class="nav-item  mx-5">
+	        <a class="nav-link eleme mynav text-center" href="#">Contact</a>
+	      </li>
+	    </ul>
+	</div>
+  </div>
+</nav>
+
+	<div class="prezentare">
+		<div class="row container-fluid">
+			<div class="col-md-6 stg">
+				<h1 class="titlu">
+					Cumpăratul de teme nu a fost niciodată mai simplu!
+				</h1>
+				<div class="description">
+					<p>Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</p>
+				</div>
+				<div class="row buttons text-center">
+					<div class="col-sm-3">
+						<button type="button" class="dark-b float-lg-left float-md-center mb-2" data-toggle="modal" data-target="#exampleModal">
+						  Vreau sa cumpar
+						</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header backg">
+						        <p class="modal-title pt-1 mer_basic font-weight-bold ml-3" id="exampleModalLabel">Exprimă-ți frustrările</p>
+						        <button type="button" onclick="formReset()" class="my_close shadow-none" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <form method="post" id="my_popform">
+								  <div id="selector" class="form-group ml-3 mr-3">
+								    <select class="form-control" id="materie" name="materie" required>
+								    </select>
+								  </div>
+								  <div class="form-group ml-3 mr-3">
+								    <input type="titlu" class="form-control" id="titlu" name="titlu" required placeholder="Titlul proiectului" required>
+								  </div>
+								</form>
+						      </div>
+						      <div class="col-sm-4">
+					        	<button type="submit" onclick="popForm()" class="btn login my_button">Încarcă</button>
+					          </div>
+					        <div class="container-fluid backg mt-3">
+					        	<p class="mer_basic text-left ml-3 pt-3 font-weight-bold"> Plângeri introduse până acum. </p>
+					        </div>
+					        <div id="subbb">
+
+					        </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div>
+							<button type="button" class="light-b float-lg-left float-md-center mb-5">
+						 		 Vreau sa fac teme pentru alții
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="img-fluid" src="img/art0.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid backg pb-5 mt-5 mb-5">
+		<h1 class="mer_title text-center pt-5">
+			Cum funcționează?
+		</h1>
+		<div class="row pt-5">
+			<div class="col-1"></div>
+			<div class="col-md-3 mb-5 mobile-margins">
+				<div class="row">
+					<div class="col-2">
+						<p class="mer_black text-center">
+							1
+						</p>
+					</div>
+					<div class="col-8 mer_basic">
+						<p>
+							Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-3 mb-5 mobile-margins">
+				<div class="row">
+					<div class="col-2">
+						<p class="mer_black text-center">
+							2
+						</p>
+					</div>
+					<div class="col-8 mer_basic">
+						<p>
+							Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-3 mb-5 mobile-margins">
+				<div class="row">
+					<div class="col-2">
+						<p class="mer_black text-center">
+							3
+						</p>
+					</div>
+					<div class="col-8 mer_basic">
+						<p>
+							După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+    <div class="container shadow-lg formbox mt-5 mb-5 pt-5">
+    	<div class="row">
+    		<div class="col-md-5">
+    			<h3 class="mer_form_title mb-6 pl-4 pr-4">
+    				Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?
+    			</h3>
+    			<div class="pr-4 mt-4 col-md-8">
+	    			<p class="mer-basic pl-3">
+	    				Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.
+	    			</p>
+    			</div>
+    		</div>
+    		<div class="col-md-6 mb-4">
+		    	<form>
+	    		  <div class="form-group font-weight-bold">
+				    <label for="exampleFormControlInput1">Nume</label>
+				    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Razvan Deaconescu">
+				  </div>
+				  <div class="form-group font-weight-bold">
+				    <label for="exampleFormControlInput1">Email</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="sef_pe_acorn@clusterUPB.bos">
+				  </div>
+				  <div class="form-group font-weight-bold ">
+				    <label for="exampleFormControlTextarea1">Înjurătura</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Acest site este in parteneriat cu Politia Glumelor. Atentie la caterinca expirata!"></textarea>
+				  </div>
+				  <div class="my_btn">
+		 	 		<button type="submit" class="login mt-2">Trimite</button>
+		 	 	</div>
+			 	</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="my_footer pt-4 pb-4">
+		<div class="text-center">
+			<div class="social_media ml-1">
+				<a href="#">
+					<img src="img/insta.png">
+				</a>
+			</div>
+			<div class="social_media ml-1">
+				<a href="#">
+					<img src="img/tweet.png">
+				</a>
+			</div>
+			<div class="social_media ml-1">
+				<a href="#">
+					<img src="img/fb.png">
+				</a>
+			</div>
+	</div>
+	  <div class="footer-copyright text-center pt-4 pb-3">
+	  	© Copyright 2020 | Cine ne pârăște o mierlește.
+	  </div>
+
+	</footer>
+
+  <script src="js/main.js"></script>
+</body>
