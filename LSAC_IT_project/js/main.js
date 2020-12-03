@@ -46,6 +46,18 @@ else
   }
 }
 
+function formReset() {
+  var reseter = document.getElementById("materie");
+  reseter.remove();
+  reseter = document.createElement("select");
+  reseter.id = "materie";
+  reseter.classList.add("form-control");
+  reseter.attributes.name = "materie";
+  reseter.attributes.required = "required";
+  var selector = document.getElementById("selector");
+  selector.appendChild(reseter);
+  }
+
 function formDrop() {
   const subjects = ["Alege materia", "PC", "USO", "Mate1", "Mate2"];
   var option;
